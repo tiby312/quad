@@ -1,0 +1,23 @@
+
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  </head>
+  <body>
+    <script src='quad.js'></script>
+
+    <script>
+    
+      const { start } = wasm_bindgen;
+      async function run() {
+        await wasm_bindgen();
+
+        start();
+      }
+
+      run();
+    </script>
+    <canvas id="canvas" height="150" width="150"></canvas>
+
+  </body>
+</html>
